@@ -2,9 +2,9 @@ __author__ = 'xierui774'
 import pandas as pd
 import numpy as np
 import os
-base_dir = 'd:/Project/Stock/'
+base_dir = 'd:/Project/Stock/StockTrading/'
 
-def generate_file(tuples, filename, base_dir='d:/Project/Stock/'):
+def generate_file(tuples, filename, base_dir=base_dir):
     df = pd.read_csv(base_dir+'data/stock_basic.csv',sep='\t')[['code','name']]
     df_res = pd.DataFrame(tuples)
     df_res.columns = ['code','dt']

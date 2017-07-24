@@ -31,7 +31,7 @@ def gen_get_single(already_codes):
     def get_single(code):
         for i in [0,1,2]:
             try:
-                if type(code)==type(1) or type(code)==type(np.array([1222222222222])[0]):
+                if type(code)==type(1) or type(code)==type(np.array([1])[0]):
                     code = '%06d' % code
                 if code not in alread_code:
                     print type(code)
