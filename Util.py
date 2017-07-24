@@ -4,6 +4,8 @@ import numpy as np
 import os
 base_dir = 'd:/Project/Stock/StockTrading/'
 
+# sub directory as /data, /result
+
 def generate_file(tuples, filename, base_dir=base_dir):
     df = pd.read_csv(base_dir+'data/stock_basic.csv',sep='\t')[['code','name']]
     df_res = pd.DataFrame(tuples)
